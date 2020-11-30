@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textSize="35dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:text="E-Mail"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:background="@drawable/gradient"
+            android:backgroundTint="@color/bg"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:id="@+id/username"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="150dp"
+            android:text="password"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:background="@drawable/gradient"
+            android:backgroundTint="@color/bg"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:id="@+id/password"
+            />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:src="@drawable/loginbutton"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="30dp"
+            android:id="@+id/login"
+            />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:src="@drawable/signupbutton"
+            android:layout_below="@+id/login"
+            android:layout_marginTop="100dp"
+            android:id="@+id/signup"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
